@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Carddy Party</title>
+</head>
+<body>
+  <div class="container">
+    <div class="prompt-window">
+      Prompt
+      <p class="prompt-window-text"></p>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="gotCards">
+          <p class="cardtext1"></p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="gotCards">
+          <p class="cardtext2"></p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="gotCards">
+          <p class="cardtext3"></p>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="judgeControls">
+    <div class ="row">
+      <div class ="col-8">
+        <a href="index.html" class="btn btn-outline-primary" role="button">Back to Player</a>
+        <button type="button" class="btn btn-outline-primary" id="promptButton">Fetch Prompt</button>
+        <button type="button" class="btn btn-outline-primary" id="promptButton2">Fetch Related Prompt</button>
+        <button type="button" class="btn btn-outline-primary" id="getthemcards">Get Final Cards</button>
+      </div>
+      <div class="col-4 timerthing">
+        <div id="turnTimer">
+          <h2>Turn Timer</h2>
+          <span id="turnOver"><p>Turn Over!</p></span>
+          <p id="turnTimerDisplay"></p>
+          
+          <label for="selectTime" id="label">Select a timer</label>
+          <select name="selectTime" id="selectTime">
+              <option value="10">10</option>
+            <option value="30">30</option>
+              <option value="45">45</option>
+              <option value="60">60</option>
+          </select>
+          <button  id="button" class="btn btn-outline-primary">Start</button>
+        </div>
+      </div>
+  </div>
+</div>
+<div id="scoreboard">
+  <p>Player 1  <button type="button" class="btn btn-outline-primary btn-circle btn-md" id="p1Score">+1</button><span class="p1"></span></p>
+  <br>
+  <p>Player 2  <button type="button" class="btn btn-outline-primary btn-circle btn-md" id="p2Score">+1</button><span class="p2"></span></p>
+  <br>
+  <p>Player 3  <button type="button" class="btn btn-outline-primary btn-circle btn-md" id="p3Score">+1</button><span class="p3"></span></p>
+  <br>
+  <p>Player 4  <button type="button" class="btn btn-outline-primary btn-circle btn-md" id="p4Score">+1</button><span class="p4"></span></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Carddy Party</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="empty-space">
+        <p>Take a look at the monitor for instructions!</p>
+      </div>
+    </div>
+    <div id="cardContainer">
+      <div class="row">
+        <div class="col-4">
+          <div id="card-style-1">
+            <div id="card-0">Card 1 Here</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div id="card-style-2">
+            <div id="card-1">Card 2 Here</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div id="card-style-3">
+            <div id="card-2">Card 3 Here</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-panel">
+      <div class="row">
+        <div class="col-3">
+          <div class="player-number">
+            <div class="player-number-text">
+              <div id="playerId">1</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="submit">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-6">
+                  <label for="answer">Answer:</label>
+                  <input type="text" class="form-control" id="answer" width=80%>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-outline-primary submit-button" id="submitButton">Submit This Answer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <a href="judge.html">CLICK ME TEST</a> -->
+  <div id="footer">
+    <div class="button-panel">
+      <a href="judge.html" class="btn btn-info" role="button">Judge Panel</a>
+      <!-- <button type="button" class="btn btn-outline-primary" id="promptButton">Fetch Prompt</button> -->
+      <button type="button" class="btn btn-outline-primary" id="getCardButton">Shuffle!</button>
+      <button type="button" class="btn btn-outline-primary" id="cyclePlayer">Change Player</button>
+      <button type="button" class="btn btn-outline-primary" id="submitCard">Submit Card</button>
+      <button type="button" class="btn btn-outline-primary" id="reload">New Round</button>
+      <span class="output"></span>
+      <p id="errorOutput"></p>
+    </div>
+  </div>
+</body>
+
+</html>

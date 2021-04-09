@@ -1,0 +1,230 @@
+/* Color Palette
+75C9C8
+80A1D4
+525252
+FC7A1E
+F9C784
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height:100%;
+  width:100%;
+  margin:0;
+}
+
+body {
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.prompt-window, .judgeControls, .empty-space {
+  margin-top: 15px;
+  width: 100%;
+  padding: 50px;
+  border: 10px solid #FC7A1E;
+  border-style: groove ridge ridge groove;
+  border-radius: 30px;
+  background-color: white;
+}
+.prompt-window {
+  font-size: 40px;
+  text-align: center;
+}
+
+#card-style-1, #card-style-2, #card-style-3, .gotCards {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+  height: 400px;
+  /* padding-bottom: 250px; */
+  /* background-color: aliceblue; */
+  background-color: #D8ECFD;
+  border: 1px solid gray;
+  border-radius: 30px;
+  box-shadow: 10px 10px 8px #888888;
+  max-height: 400px;
+  overflow-wrap: break-word;
+}
+#card-style-1, #card-style-2, #card-style-3{
+  display: none;
+}
+.judgeControls{
+  margin-top: 50px;
+}
+
+.timerthing {
+  background-color: #F9C784;
+  border: 6px solid #ff9a52;
+  border-radius: 2px;
+  box-shadow: 2px 2px 8px #888888;
+}
+
+/* .test-card-1, .test-card-2, .test-card-3 {
+  text-align: center;
+  width: 310px;
+  height: 440px;
+  background-color: aliceblue;
+  border: 1px solid gray;
+  border-radius: 30px;
+  box-shadow: 10px 10px 8px #888888;
+} */
+
+.action-panel {
+  background-color: white;
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -40%;
+  width: 80%;
+  border: 10px solid #FC7A1E;
+  border-style: groove ridge ridge groove;
+  border-radius: 30px;
+  /* padding-bottom: 75px; */
+  /* height: 100%; */
+}
+
+.button-panel {
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+}
+
+.player-number {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 72px;
+  /* background-color: gray; */
+  border: 3px solid #F9C784;
+  border-radius: 15px;
+  /* padding: 50px; */
+  width: 60%;
+  /* float: left; */
+  margin: 15px;
+}
+
+.inline-stuff {
+  display: inline;
+}
+
+.submit {
+  /* background-color: aqua; */
+  border: 3px solid #F9C784;
+  border-radius: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 15px;
+  padding-top: 25px;
+  /* width: 60%; */
+  /* float: right; */
+}
+
+div#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  height: 50px;
+  background:#fce3c1;
+  padding:8px;
+}
+
+.submit-button {
+  position: relative;
+  top: 31px;
+}
+
+.empty-space {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#turnOver {
+  display: hidden;
+}
+
+/* I admit this is a hack way to hide errors but it works */
+
+#errorOutput {
+  display: none;
+}
+.btn-circle.btn-md {
+  width: 50px;
+  height: 50px;
+  padding: 7px 10px;
+  border-radius: 25px;
+  font-size: 10px;
+  text-align: center;
+  border-width: 5px;
+}
+
+#p1Score {
+  border-color: lightskyblue;
+  background-color: white;
+}
+#p2Score {
+  border-color: lightgreen;
+  background-color: white;
+}
+#p3Score {
+  border-color: orange;
+  background-color: white;
+}
+#p4Score {
+  border-color: hotpink;
+  background-color: white;
+}
+
+#scoreboard {
+  position: fixed;
+  right: 50px;
+  top: 30%;
+  padding: 20px;
+  border: 3px solid rgba(255, 145, 0, 0.877);
+  border-radius: 15px;
+  background-color: white;
+}
+
+/* This is such a hack omg */
+#cyclePlayer {
+  position: relative;
+  right: 200%;
+}
+
+.output {
+  display: none;
+  border: 3px solid rgba(255, 145, 0, 0.877);
+  border-radius: 15px;
+  background-color: white;
+  position: fixed;
+  top: 40%;
+  right: 10px;
+  /* border: 1px solid black; */
+  max-width: 150px;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-wrap: break-word;
+}
+
+btn-primary {
+  background-color: #D8ECFD;
+}
